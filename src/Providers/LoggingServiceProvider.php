@@ -15,7 +15,6 @@ class LoggingServiceProvider extends ServiceProvider
             __DIR__.'/../../config/access-log.php', 'access-log'
         );
 
-        // CORREÇÃO: Usando o nome correto da interface no bind
         $this->app->bind(AccessLogRepositoryInterface::class, AccessLogRepository::class);
     }
 

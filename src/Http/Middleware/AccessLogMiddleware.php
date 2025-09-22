@@ -50,7 +50,6 @@ class AccessLogMiddleware
 
     private function prepareLogDetails(Request $request, Response $response): array
     {
-        $infoTrait = app()->has('model_logs') ? app('model_logs') : [];
         $status = $response->getStatusCode();
 
         if ($status >= 400 || $request->isMethod('get') || empty($infoTrait)) {
