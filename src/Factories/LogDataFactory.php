@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\SystemLog\Factories;
+namespace Carcara\SystemLog\Factories;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

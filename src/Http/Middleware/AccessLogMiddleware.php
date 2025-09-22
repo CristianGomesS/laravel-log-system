@@ -1,10 +1,8 @@
 <?php
 
-// CORREÇÃO 1: O namespace DEVE ser o do seu pacote.
-namespace Vendor\SystemLog\Http\Middleware;
+namespace Carcara\SystemLog\Http\Middleware;
 
-// CORREÇÃO 2: A importação do serviço DEVE vir de dentro do seu pacote.
-use Vendor\SystemLog\Services\AccessLogService;
+use Carcara\SystemLog\Services\AccessLogService;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,13 +10,15 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AccessLogMiddleware
 {
-    public function __construct(protected AccessLogService $logAccessService)
+    protected AccessLogService $logAccessService;
+    public function __construct(AccessLogService $logAccessService)
     {
+        $this->logAccessService = $logAccessService;
     }
 
     public function handle(Request $request, Closure $next): Response
     {
-        if (! config('access-log.enabled')) {
+        if (!config('access-log.enabled')) {
             return $next($request);
         }
 

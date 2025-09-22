@@ -1,9 +1,9 @@
 <?php
 
-namespace Vendor\SystemLog\Services;
+namespace Carcara\SystemLog\Services;
 
-use Vendor\SystemLog\Factories\LogDataFactory;
-use Vendor\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
+use Carcara\SystemLog\Factories\LogDataFactory;
+use Carcara\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
 
 class AccessLogService
 {

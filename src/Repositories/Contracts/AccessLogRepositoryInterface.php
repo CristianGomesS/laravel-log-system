@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\SystemLog\Repositories\Contracts;
+namespace Carcara\SystemLog\Repositories\Contracts;
 
 interface AccessLogRepositoryInterface
 {

@@ -1,5 +1,5 @@
 {
-    "name": "vendor/system-log",
+    "name": "carcara/system-log",
     "description": "Um pacote simples para logar acessos em aplicações Laravel.",
     "type": "laravel-package",
     "license": "MIT",
@@ -14,20 +14,20 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "^10.0 || ^11.0",
-        "illuminate/http": "^10.0 || ^11.0",
-        "illuminate/log": "^10.0 || ^11.0"
+        "php": "^7.4 || ^8.0",
+        "illuminate/support": "^8.0 ||^10.0 || ^11.0",
+        "illuminate/http": "^8.0 ||^10.0 || ^11.0",
+        "illuminate/log": "^8.0 ||^10.0 || ^11.0"
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\SystemLog\\": "src/"
+            "Carcara\\SystemLog\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\SystemLog\\Providers\\LoggingServiceProvider"
+                "Carcara\\SystemLog\\Providers\\LoggingServiceProvider"
             ]
         }
     },

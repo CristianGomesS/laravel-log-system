@@ -1,8 +1,8 @@
 <?php
 
-namespace Vendor\SystemLog\Repositories\File;
+namespace Carcara\SystemLog\Repositories\Core;
 
-use Vendor\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
+use Carcara\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
 use Illuminate\Support\Facades\Log;
 
 

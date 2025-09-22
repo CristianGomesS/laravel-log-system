@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\SystemLog\Providers;
+namespace Carcara\SystemLog\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Vendor\SystemLog\Http\Middleware\AccessLogMiddleware;
-use Vendor\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
-use Vendor\SystemLog\Repositories\File\AccessLogRepository;
+use Carcara\SystemLog\Http\Middleware\AccessLogMiddleware;
+use Carcara\SystemLog\Repositories\Contracts\AccessLogRepositoryInterface;
+use Carcara\SystemLog\Repositories\Core\AccessLogRepository;
 
 class LoggingServiceProvider extends ServiceProvider
 {
